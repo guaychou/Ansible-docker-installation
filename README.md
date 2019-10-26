@@ -20,11 +20,11 @@ $ cd Ansible-docker-installation
 Change <yourDistro> to specific Linux Distribution, for now only 2 available : Ubuntu, and Manjaro
 
 ```sh
-sudo ansible-playbook master.yml --extra-vars "my_distro=<yourDistro> username=`echo $USER`"
+$ sudo ansible-playbook master.yml --extra-vars "my_distro=<yourDistro> username=`echo $USER`"
 ```
 
 Example
 
 ```sh
-sudo ansible-playbook master.yml --extra-vars "my_distro=Ubuntu username=`echo $USER`"
+$ sudo ansible-playbook master.yml --extra-vars "my_distro=Ubuntu username=`echo $USER`"
 ```
