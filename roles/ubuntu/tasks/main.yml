@@ -1,19 +1,19 @@
 ---
 
 - name: Install a list of packages
-     apt:
-       name: "{{ packages }}"
-       state: present
-     vars:
-       packages:
-       - unzip
-       - zsh
-       - wget
-       - curl
-       - apt-transport-https
-       - ca-certificates
-       - gnupg-agent
-       - software-properties-common
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+    - unzip
+    - zsh
+    - wget
+    - curl
+    - apt-transport-https
+    - ca-certificates
+    - gnupg-agent
+    - software-properties-common
        
 - name: Add an gpg signing Docker
   apt_key:
